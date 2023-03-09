@@ -1,0 +1,520 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*banner*/
+.banner {
+    background-image: url(../images/banner\ img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    padding: 40px;
+}
+
+.banner h1 {
+    font-size: 54px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.banner p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.banner button {
+    background: #f64b3c;
+    border-radius: 50px;
+    border: 0px;
+    color: #fff;
+    width: 45%;
+    height: 15%;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.banner button:hover {
+    color: #f64b3c;
+    background-color: #fff;
+    transition: .5s all ease-in-out;
+}
+
+.banner_img {
+    width: 60px;
+}
+
+.nav-item a {
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 0%;
+    height: 3px;
+    background-color: #f64b3c;
+    transition: .5s all ease-in-out;
+    margin-bottom: 2px;
+}
+
+.nav-item a:hover {
+    color: #fff;
+}
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+/*banner*/
+/*our_chef strt*/
+.our_chef {
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 40px;
+}
+
+.our_chef h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #f64b3c;
+}
+
+.our_chef p {
+    text-align: center;
+    font-size: 18px;
+    color: #f64b3c;
+}
+
+.chef_info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chef_info img {
+    margin-bottom: 20px;
+    width: 40% !important;
+    margin-left: 30%;
+}
+
+.chef_info h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #f64b3c;
+}
+
+.chef_info p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    color: #f64b3c;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dots .owl-dot span {
+    display: block;
+    background: #dddddd;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: #f64b3c;
+}
+
+/*our_chef*/
+/*our_burgers*/
+.our_burgers {
+    padding: 50px;
+    color: #fff;
+    background: #f64b3c;
+}
+
+.burger_img {
+    width: 62%;
+}
+
+.our_burgers h1 {
+    font-weight: 700;
+}
+
+.our_burgers p {
+    font-size: 15px;
+}
+
+.btn_menu {
+    background: #fff;
+    border-radius: 0;
+    color: #f64b3c;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.btn_menu:hover {
+    background-color: #6f2b25;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+/*our_burgers*/
+/*foods_serve*/
+.foods_serve {
+    text-align: center;
+    padding: 45px;
+    background: #f2f2f4;
+}
+
+.foods_serve h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.foods_serve p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.food_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.food_list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    background: #fff;
+}
+
+.food_list ul li {
+    font-size: 15px;
+    padding: 35px 50px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.075);
+}
+
+.food_list ul li:first-child {
+    font-size: 15px;
+    background-color: #f64b3c;
+    color: #fff;
+    padding: 35px 50px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.075);
+}
+
+.food_list ul li:hover {
+    background-color: #f64b3c;
+    color: #fff;
+    transition: .5s all ease-in-out;
+}
+
+/*foods_serve*/
+/*reservation*/
+.reservation {
+    background-image: url(../images/reservation-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    z-index: 0;
+}
+
+.reservation::before {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+
+.reservation h1 {
+    padding-top: 70px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.reservation p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.form {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background: transparent;
+    color: #f64b3c;
+}
+
+.btn_reserve {
+    text-align: center;
+    background: #f64b3c;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.btn_reserve:hover {
+    background-color: #f64b3c;
+    color: #000;
+    box-shadow: 0px 5px 20px -7px rgba(246, 75, 60, 1),
+        0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: .6s all ease-in-out;
+}
+
+/*reservation*/
+/* our_blog */
+.our_blog {
+    padding: 45px;
+}
+
+.blog_news {
+    text-align: center;
+}
+
+.blog_news h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.blog_news p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.blog_info {}
+
+.blog_info h3 {
+    background: #000;
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+    color: #fff;
+    padding: 8px;
+}
+
+.blog_info h2 {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 15px;
+    color: #f64b3c;
+}
+
+.blog_info h6 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #736969dd;
+}
+
+.blog_info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog_info ul li {
+    display: flex;
+}
+
+.blog_info ul li i {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #736969dd;
+    font-weight: 600;
+}
+
+.blog_info ul li p {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    color: #736969dd;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.blog_img {
+    position: relative;
+}
+
+.blog_img img {}
+
+.blog_img::before {
+    content: '';
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #f64b3c;
+    opacity: 0;
+}
+
+.blog_img:hover:before {
+    transition: .5s all ease-in-out;
+    opacity: .6;
+    height: 100%;
+}
+
+.blog_img_info h1 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.blog_img_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.blog_img:hover .blog_img_info {
+    opacity: 1;
+}
+
+/* our_blog */
+
+/* contact_info */
+.contact_info {
+    padding: 45px;
+    background: #f64b3c;
+    color: #fff;
+}
+
+.cntct_info {}
+
+.cntct_info h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cntct_time {
+    display: flex;
+    margin-top: 20px;
+}
+
+.cntct_time p {
+    border-bottom: 1px solid #fff;
+}
+
+.cntct_time p:last-child {
+    margin-left: 50px;
+}
+
+.location {}
+
+.location h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.location p {
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.location h1 {
+    font-size: 35px;
+}
+
+/* contact_info */
+/* footer */
+footer {
+    background: #0c0b0b;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer span {
+    color: #f64b3c;
+    font-weight: 500;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    height: 30px;
+    width: 35px;
+    line-height: 35px;
+    background: #000;
+    text-align: center;
+    margin-left: 5px;
+}
+
+footer ul li:hover {
+    background-color: #fff;
+    color: #f64b3c;
+    transition: .5s all ease-in-out;
+}
+
+footer ul li i {}
+
+/* footer */
